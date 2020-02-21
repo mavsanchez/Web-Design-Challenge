@@ -4,14 +4,19 @@ body {
 }
 
 h1 {
-  font-size: 80px;
-  font-family: 'Georgia Header';
+  font-family: 'Georgia';
   color:#0BADA6;
 }
 
-h2, h3 {
+h2, h3, h4 {
   color:#0BADA6;
 }
+/* 
+h4 {
+  text-align: center;
+  font: bold
+} */
+
 /* Customizations over here  */
 .navbar li a {
   color: #000;
@@ -35,7 +40,7 @@ h2, h3 {
 background:#0BADA6;
 font-size: 30px;
 font-weight: bold;
-color: white;
+color: white !important;
 padding: 0 15px;
 height: 80px;
 line-height: 80px;
@@ -50,7 +55,7 @@ line-height: 80px;
   vertical-align: text-top;
 }
 
-.img-100 img {  max-width: 100%;}
+.img-100 {  max-width: 100%;}
 .img-75 img {  max-width: 75%;}
 .img-50 {  width: 200px; height: 200px; }
 .img-25 {  width: 150px; height: 150px; }
