@@ -1,92 +1,79 @@
-/* Giving the body the specified background color, adding font sizes for the h1 and h3 elements we'll be using */
 body {
   background: #f1f1f1;
   font-family: Georgia, 'Times New Roman', Times, serif;
-  
 }
+
 h1 {
   font-size: 80px;
-  font-family: 'Georgia Header'
-}
-h3 {
-  font-size: 30px;
-}
-/* Giving our navbar some padding and a background color */
-
-.fixed-top{
-  margin-bottom: 15px !important;
+  font-family: 'Georgia Header';
+  color:#0BADA6;
 }
 
-.navbar {
-  background: white;
-  justify-content: space-between;
-  min-height: 80px;
-  padding-top: 0%;
-  padding-bottom: 0%;
-  padding-left: 5%;
-  padding-right: 5%;
-
-  
+h2, h3 {
+  color:#0BADA6;
 }
-
-
-/* Making our navbar li's inline-block elements this makes it so we can have multiple on the same line. Floats could have been used too */
-.navbar li {
-  display: inline-block;
-  margin-right: 10px;
-  margin-left: 10px;
-  cursor: pointer;
-}
-/* Getting rid of the default link styles here */
+/* Customizations over here  */
 .navbar li a {
   color: #000;
   text-decoration: none;
 }
 
-.navbar-brand{
-  background:#0BADA6;
-  font-size: 30px;
-  font-weight: bold;
-  color: white;
-  padding: 0 15px;
-  height: 80px;
-  line-height: 80px;
-}
-/* Styling the header, giving it a height, a background color, and some top padding */
-.header {
-  height: 200px;
-  padding-top: 20px;
-  background: #cdcdcd;
-}
-/* Centering our h1 tag inside our header, giving it a little padding, removing its margin */
-.header h1 {
-  padding: 60px;
-  margin: 0;
-  color: #000;
-  text-align: center;
-}
-/* Giving the .post element margin on 3 sides */
-.post {
-  margin-top: 50px;
-  margin-right: 100px;
-  margin-left: 100px;
-}
-#nav-select {
-  display: none;
+.navbar {
+  background: white;
+  min-height: 80px;
+  padding-left: 5%;
+  padding-right: 5%;
+  margin-bottom: 2%;
 }
 
+.navbar-collapse{
+  justify-content: space-between;
+  min-height: 80px;
+}
+
+.navbar-brand{
+background:#0BADA6;
+font-size: 30px;
+font-weight: bold;
+color: white;
+padding: 0 15px;
+height: 80px;
+line-height: 80px;
+}
+
+.box {
+  margin-top: 10px;
+  word-wrap:break-word !important;
+  padding: 15px;
+  color: rgb(61, 61, 61);
+  background: white;
+  vertical-align: text-top;
+}
+
+.img-100 img {  max-width: 100%;}
+.img-75 img {  max-width: 75%;}
+.img-50 {  width: 200px; height: 200px; }
+.img-25 {  width: 150px; height: 150px; }
+
+p {
+  word-wrap:break-word !important;
+  display: flex ;
+
+}
+
+
 @media (max-width: 600px) {
-  .navbar ul {
-    visibility: hidden;
+  .menu-inline {
+      visibility: hidden;
   }
-  .navbar li {
-    padding: 10px;
+
+  .navbar-toggler {
+      visibility: visible;
   }
-  #nav-select {
-    display: inline-block;
+  p {
+      word-wrap:break-word !important;
+      display: flex ;
   }
-  .post {
-    margin-right: 30px;
-    margin-left: 30px;
-  }
+  
+  
 }
